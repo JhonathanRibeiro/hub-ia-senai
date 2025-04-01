@@ -4,12 +4,12 @@ const zlib = require('zlib');
 
 // CONFIGURAÇÕES
 const ACO_CONFIG = {
-    ANTS: 60, // Número de formigas
-    ITERATIONS: 100, // Número de iterações
-    ALPHA: 1.0, // Importância do feromônio
-    BETA: 3.0, // Importância da heurística
-    EVAPORATION: 0.5, // Taxa de evaporação do feromônio
-    PHEROMONE_DEPOSIT: 100 // Quantidade de feromônio depositado por uma formiga
+    ANTS: 100, // Número de formigas
+    ITERATIONS: 200, // Número de iterações
+    ALPHA: 0.8, // Importância do feromônio
+    BETA: 5.0, // Importância da heurística
+    EVAPORATION: 0.7, // Taxa de evaporação do feromônio
+    PHEROMONE_DEPOSIT: 500 // Quantidade de feromônio depositado por uma formiga
 };
 
 // 1. Ler arquivo TSP
