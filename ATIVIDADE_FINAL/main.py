@@ -47,7 +47,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Dicionário de modelos
 modelos = {
-    "KNN": KNeighborsClassifier(),
+    # "KNN": KNeighborsClassifier(), # default
+    "KNN": KNeighborsClassifier(n_neighbors=3, algorithm='kd_tree', metric='manhattan', leaf_size=20) # modificado
     # "Árvore de Decisão": DecisionTreeClassifier(random_state=42),
     # "MLP": MLPClassifier(random_state=42, max_iter=1000),
     # "SVM": SVC(random_state=42),
